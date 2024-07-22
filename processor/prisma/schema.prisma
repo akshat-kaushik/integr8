@@ -49,7 +49,6 @@ model Action{
   task Task @relation(fields: [taskId],references: [id])
   actionId String
   type  availableActions @relation(fields: [actionId],references: [id])
-  order Int @default(0)
 }
 
 model availableActions{
